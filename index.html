@@ -38,6 +38,7 @@ h1, h1 *{
   color: #14486F; 
   margin: 0;
   line-height: 100px;
+  text-shadow: 2px 2px #fff;
 } 
 
 h2{
@@ -54,6 +55,7 @@ h4{
   color: #C5402E;
   font-size: 1.9rem;
   margin: 10px 0;
+  z-index: 1;
 }
 
 p{
@@ -73,6 +75,7 @@ p{
   padding: 18px 24px;
   box-sizing: border-box;
   margin: 16px;
+  margin-left: 0;
   cursor: pointer;
   max-width: 300px;
   text-align: center;
@@ -80,6 +83,7 @@ p{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.1em;
 }
+
 
 .btn:hover{
   opacity: 0.9;
@@ -128,6 +132,32 @@ section{
   grid-template-columns: 1fr 1fr;
 }
 
+.eagle{
+  grid-row: 1/3; 
+  grid-column: 1/3;
+  width:100%; 
+  max-height:500px;
+  filter:grayscale(20%); 
+  object-fit: cover;
+}
+
+.text-row{
+  grid-row: 2/4; 
+  grid-column:1/3; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.btn-row{
+  grid-row: 5; 
+  grid-column: 1/3; 
+  display: flex; 
+  justify-content: center; 
+  padding-left: 16px;
+}
+
+
 @media (max-width: 699px){
   h4 {
     font-size: 1.8rem;
@@ -148,6 +178,22 @@ section{
 
   section{
     margin-top: 32px;
+  }
+
+
+}
+
+@media(max-width: 1000px){
+    .eagle{
+    grid-row: 1/9; 
+  }
+
+  .text-row{
+    grid-row: 8/9;
+  }
+
+  .btn-row{
+    grid-row: 9;
   }
 }
 
@@ -175,8 +221,21 @@ section{
     margin: 0 auto;
   }
 
+  .big-btn{
+    font-size: 44px;
+    padding: 18px 24px; 
+    max-width: 450px;
+  }
+
 }
 
+@media (min-width: 700px){
+  .big-btn{
+    font-size: 36px;
+    padding: 18px 24px; 
+    max-width: 450px;
+  }
+}
 
 @media (max-width: 500px){
   h1, h1 * {
@@ -202,9 +261,9 @@ section{
 
 
 <div style="display: grid">
-  <img src="eagle.png" style="grid-row: 1/3; grid-column: 1/3; width:100%; max-height:500px">
+  <img src="eagle.jpg" class="eagle">
 
-  <div class="text-grid" style="grid-row: 2/4; grid-column:1/3; display: flex; flex-direction: column; align-items: center">
+  <div class="text-row">
 
     <h1 style="transform: scaleY(0.6)">Meme <span style="color: #C5402E">for</span></h1>
     <h1 class="america" style="transform: scaleY(0.7);">America<h1>
@@ -213,9 +272,9 @@ section{
 
   </div>
 
-  <div style="grid-row: 5; grid-column: 1/3; display: flex; justify-content: center;">
-    <a class="blue btn">Meme with us</a>
-    <a class="blue btn">Host an event</a>
+  <div class="btn-row">
+    <a class="blue btn big-btn">Meme with us</a>
+    <a class="blue btn big-btn">Host an event</a>
   </div>
 
 </div>
@@ -297,7 +356,7 @@ section{
 
 <section class="red pretty-text" style="display: flex; align-items: center; flex-direction: column;">
 
-  <h2>If you want this</h2>
+  <h2 style="text-align: center">If you want this</h2>
 
   <img src="cat.png" style="width:500px;">
 
