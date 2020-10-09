@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:image" content="https://memeforamerica.org/mfa.png" />
 
@@ -23,7 +23,8 @@
 
 <style>
 *{
-  font-family: 'Source Sans Pro', sans-serif;
+/*  font-family: Impact, sans-serif;*/
+  font-family: 'Anton', sans-serif;
   color: white;
 }
 
@@ -32,17 +33,15 @@ body{
 }
 
 h1, h1 *{
-  font-family: Impact, sans-serif;
   text-transform: uppercase;
   font-size: 10rem;
   color: #14486F; 
   margin: 0;
-  line-height: 100px;
-  text-shadow: 2px 2px #fff;
+  line-height: 110px;
+  text-shadow: 7px 7px 0px #E8BC5B;
 } 
 
 h2{
-  font-family: Impact, sans-serif;
   text-transform: uppercase;
   font-size: 48px;
   margin-top: 0;
@@ -50,7 +49,6 @@ h2{
 
 h4{
   text-align: center;
-  font-family: Impact, sans-serif;
   text-transform: uppercase;
   color: #C5402E;
   font-size: 1.9rem;
@@ -59,13 +57,13 @@ h4{
 }
 
 p{
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   line-height: 180%;
   max-width: 520px;
 }
 
 .btn{
-  font-family: Impact, sans-serif;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -133,7 +131,7 @@ section{
 }
 
 .eagle{
-  grid-row: 1/3; 
+  grid-row: 1/7; 
   grid-column: 1/3;
   width:100%; 
   max-height:500px;
@@ -142,7 +140,8 @@ section{
 }
 
 .text-row{
-  grid-row: 2/4; 
+/*  grid-row: 2/4; */
+  grid-row: 4/9;
   grid-column:1/3; 
   display: flex; 
   flex-direction: column; 
@@ -150,7 +149,7 @@ section{
 }
 
 .btn-row{
-  grid-row: 5; 
+  grid-row: 9; /*5*/ 
   grid-column: 1/3; 
   display: flex; 
   justify-content: center; 
@@ -184,7 +183,7 @@ section{
 }
 
 @media(max-width: 1000px){
-    .eagle{
+  .eagle{
     grid-row: 1/9; 
   }
 
@@ -201,7 +200,7 @@ section{
 @media (min-width: 1000px){
   h1, h1 * {
     font-size: 16rem;
-    line-height: 150px;
+    line-height: 170px;
   }
 
   .america{
@@ -237,10 +236,29 @@ section{
   }
 }
 
+
+
+@media (max-width: 800px){
+  h1, h1 * {
+    font-size: 6.2rem;
+    line-height: 64px;
+  }
+
+  .america{
+    font-size: 7rem;
+  }
+
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 500px){
   h1, h1 * {
     font-size: 4.2rem;
-    line-height: 44px;
+    line-height: 48px;
+    text-shadow: 4px 4px 0px #E8BC5B;
   }
 
   .america{
@@ -252,7 +270,6 @@ section{
     font-size: 0.8rem;
   }
 }
-
 </style>
 
 </head>
@@ -273,8 +290,8 @@ section{
   </div>
 
   <div class="btn-row">
-    <a class="blue btn big-btn">Meme with us</a>
-    <a class="blue btn big-btn">Host an event</a>
+    <a class="blue btn big-btn" href="https://www.facebook.com/groups/753013258879048/about">Meme with us</a>
+    <a class="blue btn big-btn" href="https://docs.google.com/document/d/1o6Qfeb0kF1R0ahizSjTlmrm5XtC2snM2RzQmYg0Joiw/edit?usp=sharing">Host an event</a>
   </div>
 
 </div>
@@ -313,7 +330,7 @@ section{
 
   <img src="batman.png" >
 
-  <a class="red btn">Meme with us</a>
+  <a class="red btn" href="https://www.facebook.com/groups/753013258879048/about">Meme with us</a>
 
 </section>
 
@@ -330,7 +347,7 @@ section{
   Or help strategize on how to disseminate memes to reach our target audience. 
   </p>
 
-  <a class="blue btn">Join us</a>
+  <a class="blue btn" href="https://www.facebook.com/groups/753013258879048/about">Join us</a>
 </section>
 
 
@@ -349,7 +366,7 @@ section{
     It takes less than 30 minutes to set your friends up for a night to remember.
     </p>
 
-    <a class="red btn">Host an event</a>
+    <a class="red btn" href="https://docs.google.com/document/d/1o6Qfeb0kF1R0ahizSjTlmrm5XtC2snM2RzQmYg0Joiw/edit?usp=sharing">Host an event</a>
   </div>
 </section>
 
@@ -362,8 +379,8 @@ section{
 
   <h2 style="text-align: center; margin-top: 64px; margin-bottom: 0px;">Meme for your country</h2>
 
-  <a class="blue btn">Meme with us</a>
-  <a class="blue btn">Host an event</a>
+  <a class="blue btn" href="https://www.facebook.com/groups/753013258879048/about">Meme with us</a>
+  <a class="blue btn" href="https://docs.google.com/document/d/1o6Qfeb0kF1R0ahizSjTlmrm5XtC2snM2RzQmYg0Joiw/edit?usp=sharing">Host an event</a>
 
 </section>
 
